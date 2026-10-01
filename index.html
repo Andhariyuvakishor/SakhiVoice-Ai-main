@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sakhi AI | Voice-guided government schemes</title>
+    <meta
+      name="description"
+      content="Sakhi AI helps women discover, understand, and act on government schemes through voice guidance in multiple Indian languages."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="container nav-wrap">
+          <div class="brand" aria-label="Sakhi AI home">
+            <div class="brand-mark">S</div>
+            <span>Sakhi AI</span>
+          </div>
+
+          <nav class="nav" aria-label="Main navigation">
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How it works</a>
+            <a href="#schemes">Schemes</a>
+            <a href="#safety">Safety</a>
+          </nav>
+
+          <button class="nav-cta">Try Demo</button>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="container hero-grid">
+            <div class="hero-copy">
+              <span class="eyebrow">Voice-first support for women</span>
+              <h1>Find the right government help with a friendly voice guide.</h1>
+              <p class="lede">
+                Speak in your language and get clear guidance about welfare schemes,
+                eligibility, and next steps without confusing forms or jargon.
+              </p>
+
+              <div class="language-picker" aria-label="Language selector">
+                <button class="language-btn active" data-language="Hindi">हिन्दी</button>
+                <button class="language-btn" data-language="English">English</button>
+                <button class="language-btn" data-language="Marathi">मराठी</button>
+                <button class="language-btn" data-language="Tamil">தமிழ்</button>
+              </div>
+
+              <div class="hero-actions">
+                <button class="primary-btn">Speak with Sakhi</button>
+                <button class="secondary-btn">Explore schemes</button>
+              </div>
+
+              <ul class="hero-stats" aria-label="Platform stats">
+                <li><strong>20+</strong><span>regional voices</span></li>
+                <li><strong>100%</strong><span>voice guided</span></li>
+                <li><strong>24/7</strong><span>friendly assistance</span></li>
+              </ul>
+            </div>
+
+            <div class="hero-visual" aria-label="Sakhi AI assistant panel">
+              <div class="assistant-card">
+                <div class="assistant-header">
+                  <div class="status">
+                    <span class="dot"></span>
+                    <span>Listening</span>
+                  </div>
+                  <button class="mini-action" aria-label="Change language">Language</button>
+                </div>
+
+                <div class="assistant-avatar">
+                  <div class="ring ring-one"></div>
+                  <div class="ring ring-two"></div>
+                  <div class="avatar-core">
+                    <span>S</span>
+                  </div>
+                </div>
+
+                <div class="voice-wave" aria-hidden="true">
+                  <span></span><span></span><span></span><span></span><span></span><span></span>
+                </div>
+
+                <div class="prompt-card">
+                  <p class="prompt-label">Sakhi says</p>
+                  <p class="prompt-text" id="promptText">
+                    “Namaste! What scheme help are you looking for today?”
+                  </p>
+                </div>
+
+                <button class="listen-btn" id="listenButton" aria-label="Start listening">
+                  <span class="mic-icon">🎙️</span>
+                  <span>Listen now</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="feature-strip" id="features">
+          <div class="container strip-grid">
+            <article class="feature-card">
+              <div class="icon-wrap rose">🗣️</div>
+              <h3>Voice-first guidance</h3>
+              <p>Speak naturally and get simple, clear answers in your own language.</p>
+            </article>
+            <article class="feature-card">
+              <div class="icon-wrap gold">🧭</div>
+              <h3>Zero-overload steps</h3>
+              <p>Know what to do next, and what documents or eligibility rules matter.</p>
+            </article>
+            <article class="feature-card">
+              <div class="icon-wrap teal">🔒</div>
+              <h3>Private and secure</h3>
+              <p>Discreet support designed to protect privacy while assisting every step.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="how-it-works">
+          <div class="container">
+            <div class="section-heading">
+              <span class="eyebrow">How it works</span>
+              <h2>Three simple steps to get the help you need.</h2>
+            </div>
+
+            <div class="steps-grid">
+              <article class="step-card">
+                <span class="step-number">01</span>
+                <h3>Choose your language</h3>
+                <p>Switch between Hindi, Marathi, Tamil, Bengali, and more with one tap.</p>
+              </article>
+
+              <article class="step-card">
+                <span class="step-number">02</span>
+                <h3>Ask by voice or text</h3>
+                <p>Say what you need or type a quick question about jobs, health, or education support.</p>
+              </article>
+
+              <article class="step-card">
+                <span class="step-number">03</span>
+                <h3>Review plan and apply</h3>
+                <p>See matching schemes, understand the requirements, and save useful options for later.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section alt" id="schemes">
+          <div class="container">
+            <div class="section-heading">
+              <span class="eyebrow">Popular schemes</span>
+              <h2>Explore support built around women’s everyday needs.</h2>
+            </div>
+
+            <div class="scheme-grid">
+              <article class="scheme-card">
+                <span class="tag tag-rose">Women</span>
+                <h3>PM Ujjwala Yojana</h3>
+                <p>Free LPG connections and support for cleaner cooking in low-income households.</p>
+                <ul>
+                  <li>Income-based eligibility</li>
+                  <li>Document guidance</li>
+                  <li>Application support</li>
+                </ul>
+              </article>
+
+              <article class="scheme-card">
+                <span class="tag tag-gold">Health</span>
+                <h3>Pradhan Mantri Matru Vandana Yojana</h3>
+                <p>Cash support during pregnancy and early motherhood for eligible women.</p>
+                <ul>
+                  <li>Pregnancy benefits</li>
+                  <li>Documentation checklist</li>
+                  <li>Follow-up tips</li>
+                </ul>
+              </article>
+
+              <article class="scheme-card">
+                <span class="tag tag-teal">Education</span>
+                <h3>Post-Matric Scholarship</h3>
+                <p>Financial support for women continuing higher education and skill development.</p>
+                <ul>
+                  <li>Income and course checks</li>
+                  <li>Deadline reminders</li>
+                  <li>Application tracker</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section safety-section" id="safety">
+          <div class="container safety-grid">
+            <div class="safety-copy">
+              <span class="eyebrow">Designed for safety</span>
+              <h2>Private and discreet help, even in busy public spaces.</h2>
+              <p>
+                Sakhi AI is built to feel calm and supportive. It keeps the experience simple,
+                accessible, and private when users need it most.
+              </p>
+              <div class="check-list">
+                <div><span>✓</span> Voice-first navigation</div>
+                <div><span>✓</span> Private speech handling</div>
+                <div><span>✓</span> Quick access to saved schemes</div>
+              </div>
+            </div>
+
+            <div class="discreet-panel" aria-label="Discreet mode preview">
+              <div class="mini-topbar">
+                <span class="mini-dot"></span>
+                <span>Private mode</span>
+              </div>
+              <div class="calculator-box">
+                <div class="calc-screen">8,950</div>
+                <div class="keypad">
+                  <span>7</span><span>8</span><span>9</span>
+                  <span>4</span><span>5</span><span>6</span>
+                  <span>1</span><span>2</span><span>3</span>
+                  <span>÷</span><span>0</span><span>=</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-wrap">
+          <div>
+            <div class="brand footer-brand">
+              <div class="brand-mark">S</div>
+              <span>Sakhi AI</span>
+            </div>
+            <p>Helping women find welfare support in every language, with confidence and clarity.</p>
+          </div>
+
+          <button class="primary-btn">Get started</button>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
